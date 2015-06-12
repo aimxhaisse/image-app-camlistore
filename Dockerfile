@@ -31,9 +31,9 @@ WORKDIR /gopath
 
 
 # Install camlistore
-#RUN git clone https://camlistore.googlesource.com/camlistore \
-# && cd camlistore \
-# && go run make.go
+RUN git clone https://camlistore.googlesource.com/camlistore \
+ && cd camlistore \
+ && go run make.go
 
 
 # Clean rootfs from image-builder
